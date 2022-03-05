@@ -1,7 +1,7 @@
-# Promaxima_TesteSeletivo :chart_with_upwards_trend:
+# ProMaxima
 Entry test for the company Promaxima(Maceio-Brazil)
 
-# What the company asked for :pushpin:
+# What the company asked for 
 The goal of this challenge is create an aplication that collects, lists, adds, edits and deletes data from DataBase using the requirements below.
 
 ## Requirements:shopping_cart:
@@ -17,12 +17,12 @@ Upload your code in a GitHub repo(Public Acess).<br />
 Write step-by-step the execution on README.<br />
 Simple code(Readable).<br />
 
-## Extra
+## Extra :rocket:
 Docker or Docker-Compose if well documented.<br />
 Web Deploy for public acess.<br />
 
 # The Project itself
-## Technology used
+## Technology used :electron:
 Python 3.10 (Backend)<br />
 Django 4.0 (Project)<br />
 SQLite3 (DataBase)<br />
@@ -33,7 +33,7 @@ Chromedriver_binary 99.0 (2)<br />
 1 = Selenium was required for this project, because, when you load the page with beautifulsoup, some data is still not completly loaded, so, i made selenium render BeautifulSoup just after the data is completly loaded.<br />
 2 = Insted of downlaoding a ChromeDriver, i used this library to do the same job for me.
 
-## How to use(step-by-step)
+## How to use(step-by-step) :arrow_forward:
 Clone this repo in your machine.<br />
 Open it.<br />
 Cd into the project directory, "ThisIsTheProject", or until you find a folder with the file "manage.py" in the same folder. <br />
@@ -44,7 +44,7 @@ What happens next? This data(from the table)  will be saved in a SQLite DataBase
 From Django Admin Dashboard you can create/edit/delete any data you want.<br />
 And thats complete the project, lest check the acomplished its below.<br />
 
-## Requiremends acomplished
+## Requirements acomplished :brain:
 Django aplication. (:heavy_check_mark: done) <br /> 
 Colect data from the main table from https://pt.proxyservers.pro/. (:heavy_check_mark: done)<br />
 Must use Scrapy or BeautifuSoup for scrap data. (:heavy_check_mark: done)<br />
