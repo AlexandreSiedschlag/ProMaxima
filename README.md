@@ -30,7 +30,7 @@ BeautifulSoup 4.10 (Web Scrapping)<br />
 Lxml 
 Selenium (1)<br />
 webdriver-manager==3.5.3 (2)<br />
-Chrome 99.0 (You must use Google Chrome version 99.0) (3)<br />
+Google Chrome <br />
 
 
 1 = Selenium was required for this project, because, when you load the page with beautifulsoup, some data is still not completly loaded, so, i made selenium render BeautifulSoup just after the data is completly loaded.<br />
