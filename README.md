@@ -27,7 +27,7 @@ Python 3.10 (Backend)<br />
 Django 4.0 (Project)<br />
 SQLite3 (DataBase)<br />
 BeautifulSoup 4.10 (Web Scrapping)<br />
-Lxml 
+lxml 4.8 <br />
 Selenium (1)<br />
 webdriver-manager==3.5.3 (2)<br />
 Google Chrome <br />
