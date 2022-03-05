@@ -29,12 +29,12 @@ SQLite3 (DataBase)<br />
 BeautifulSoup 4.10 (Web Scrapping)<br />
 Lxml 
 Selenium (1)<br />
-Chromedriver_binary 99.0.4844.51.0 (2)<br />
+webdriver-manager==3.5.3 (2)<br />
 Chrome 99.0 (You must use Google Chrome version 99.0) (3)<br />
 
 
 1 = Selenium was required for this project, because, when you load the page with beautifulsoup, some data is still not completly loaded, so, i made selenium render BeautifulSoup just after the data is completly loaded.<br />
-2 = Insted of downlaoding a ChromeDriver, i used this library to do the same job for me.
+2 = Insted of downlaoding manually a ChromeDriver, i used this library to do the same job for me and be able to do the job for all Chrome versions.
 
 
 ## How to use(step-by-step) :arrow_forward:
