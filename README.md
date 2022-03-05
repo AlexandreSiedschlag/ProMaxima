@@ -27,10 +27,11 @@ Python 3.10 (Backend)<br />
 Django 4.0 (Project)<br />
 SQLite3 (DataBase)<br />
 BeautifulSoup 4.10 (Web Scrapping)<br />
-lxml 4.8 <br />
-Selenium (1)<br />
-Webdriver-manager 3.5 (2)<br />
 Google Chrome <br />
+Selenium (1)<br />
+Lxml 4.8 <br />
+Webdriver-manager 3.5 (2)<br />
+
 
 
 1 = Selenium was required for this project, because, when you load the page with beautifulsoup, some data is still not completly loaded, so, i made selenium render BeautifulSoup just after the data is completly loaded.<br />
