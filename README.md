@@ -1,10 +1,10 @@
-# Promaxima_TesteSeletivo
+# Promaxima_TesteSeletivo :chart_with_upwards_trend:
 Entry test for the company Promaxima(Maceio-Brazil)
 
-# What the company asked for
+# What the company asked for :pushpin:
 The goal of this challenge is create an aplication that collects, lists, adds, edits and deletes data from DataBase using the requirements below.
 
-## Requirementes
+## Requirements:shopping_cart:
 Django aplication. <br />
 Colect data from the main table from https://pt.proxyservers.pro/. <br />
 Must use Scrapy or BeautifuSoup for scrap data.<br />
