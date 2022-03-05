@@ -1,4 +1,4 @@
-# ProMaxima
+.# ProMaxima
 Junior's WebScrapper entry test for the company Promaxima(Maceio-Brazil)
 
 # What the company asked for  :green_circle:
@@ -29,12 +29,13 @@ SQLite3 (DataBase)<br />
 BeautifulSoup 4.10 (Web Scrapping)<br />
 Lxml 
 Selenium (1)<br />
-Chromedriver_binary 99.0 (2)<br />
-Chrome 99.0 (You must use Google Chrome version 99.0)
+Chromedriver_binary 99.0.4844.51.0 (2)<br />
+Chrome 99.0 (You must use Google Chrome version 99.0) (3)<br />
 
 
 1 = Selenium was required for this project, because, when you load the page with beautifulsoup, some data is still not completly loaded, so, i made selenium render BeautifulSoup just after the data is completly loaded.<br />
 2 = Insted of downlaoding a ChromeDriver, i used this library to do the same job for me.
+
 
 ## How to use(step-by-step) :arrow_forward:
 Clone this repo in your machine.<br />
