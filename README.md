@@ -1,4 +1,4 @@
-.# ProMaxima
+# ProMaxima
 Junior's WebScrapper entry test for the company Promaxima(Maceio-Brazil)
 
 # What the company asked for  :green_circle:
