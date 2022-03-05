@@ -1,5 +1,5 @@
 # ProMaxima
-WebScrapper's entry test for the company Promaxima(Maceio-Brazil)
+Junior's WebScrapper entry test for the company Promaxima(Maceio-Brazil)
 
 # What the company asked for  :green_circle:
 The goal of this challenge is create an aplication that collects, lists, adds, edits and deletes data from DataBase using the requirements below.
