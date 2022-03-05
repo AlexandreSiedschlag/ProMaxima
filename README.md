@@ -27,8 +27,11 @@ Python 3.10 (Backend)<br />
 Django 4.0 (Project)<br />
 SQLite3 (DataBase)<br />
 BeautifulSoup 4.10 (Web Scrapping)<br />
+Lxml 
 Selenium (1)<br />
 Chromedriver_binary 99.0 (2)<br />
+Chrome 99.0 (You must use Google Chrome version 99.0)
+
 
 1 = Selenium was required for this project, because, when you load the page with beautifulsoup, some data is still not completly loaded, so, i made selenium render BeautifulSoup just after the data is completly loaded.<br />
 2 = Insted of downlaoding a ChromeDriver, i used this library to do the same job for me.
@@ -41,6 +44,7 @@ Run this code, "python manage.py runserver" in CLI, this code SHOULD run a good 
 Run application in local host. Open your Chrome and type http://127.0.0.1:8000/ (Local Host)<br />
 On this your are at now, when you click the button, it will do the magic of web scrapping, scrapping the data from the table as required.<br />
 What happens next? This data(from the table)  will be saved in a SQLite DataBase and Django will see that and make another magic, showing all of this data in Django's Admin Dashboard, HERE: http://127.0.0.1:8000/admin. <br />
+Login: admin , Password: 1234
 From Django Admin Dashboard you can create/edit/delete any data you want.<br />
 And thats complete the project, lest check the acomplished its below.<br />
 
