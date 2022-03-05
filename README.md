@@ -1,7 +1,7 @@
 # ProMaxima
 Entry test for the company Promaxima(Maceio-Brazil)
 
-# What the company asked for 
+# What the company asked for  :green_circle:
 The goal of this challenge is create an aplication that collects, lists, adds, edits and deletes data from DataBase using the requirements below.
 
 ## Requirements:shopping_cart:
@@ -21,7 +21,7 @@ Simple code(Readable).<br />
 Docker or Docker-Compose if well documented.<br />
 Web Deploy for public acess.<br />
 
-# The Project itself
+# The Project itself :green_circle:
 ## Technology used :electron:
 Python 3.10 (Backend)<br />
 Django 4.0 (Project)<br />
@@ -56,4 +56,7 @@ Rows and collums must be similiar to the collected. (:heavy_check_mark: done)<br
 Upload your code in a GitHub repo(Public Acess). (:heavy_check_mark: done)<br />
 Write step-by-step the execution on README. (:heavy_check_mark: done)<br />
 Simple code(Readable). (:heavy_check_mark: done)<br />
-   
+
+## Extra :rocket:
+Docker or Docker-Compose if well documented. :x:<br />
+Web Deploy for public acess.:x:<br />
