@@ -1,8 +1,9 @@
 from bs4 import BeautifulSoup
-from selenium import webdriver
 import requests
-import chromedriver_binary
 from .models import WebSiteInfo
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+
 
 
 def getNumberPages(): #Get Number of pages
@@ -32,7 +33,7 @@ def getStructure(): #Get Main site structure
     url = 'https://pt.proxyservers.pro/'
     web_r = requests.get(url)
     web_soup = BeautifulSoup(web_r.text, 'html.parser')
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.get(url)
     html = driver.execute_script('return document.documentElement.outerHTML')
     soup = BeautifulSoup(web_r.text, 'html.parser')     
