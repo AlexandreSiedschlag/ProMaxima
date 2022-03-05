@@ -21,7 +21,7 @@ Simple code(Readable).<br />
 Docker or Docker-Compose if well documented.<br />
 Web Deploy for public acess.<br />
 
-# The Project itself :green_circle:
+# The project itself :green_circle:
 ## Technology used :electron:
 Python 3.10 (Backend)<br />
 Django 4.0 (Project)<br />
