@@ -22,7 +22,7 @@ Docker or Docker-Compose if well documented.<br />
 Web Deploy for public acess.<br />
 
 # The project itself :green_circle:
-## Technology used :electron:
+## Technologys used :electron:
 Python 3.10 (Backend)<br />
 Django 4.0 (Project)<br />
 SQLite3 (DataBase)<br />
