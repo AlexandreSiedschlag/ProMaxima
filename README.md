@@ -39,12 +39,12 @@ Webdriver-manager 3.5 (2)<br />
 
 
 ## How to use(step-by-step) :arrow_forward:
-Clone this repo in your machine.<br />
-Open it.<br />
-Cd into the project directory, "ThisIsTheProject", or until you find a folder with the file "manage.py" in the same folder. <br />
-Run this code, "python manage.py runserver" in CLI, this code SHOULD start a good and stabilized running application. <br />
-Open your Chrome and type http://127.0.0.1:8000/ , or just ctrl+click the link in your CLI.<br />
-Click the button on the web page, it will do the magic of web scrapping, get the data from the table.<br /><br />
+1- Clone this repo in your machine.<br />
+2- Open it.<br />
+3- Cd into the project directory, "ThisIsTheProject", or until you find a folder with the file "manage.py" in the same folder. <br />
+4- Run this code, "python manage.py runserver" in CLI, this code SHOULD start a good and stabilized running application. <br />
+5- Open your Chrome and type http://127.0.0.1:8000/ , or just ctrl+click the link in your CLI.<br />
+6- Click the button on the web page, it will do the magic of web scrapping, get the data from the table.<br /><br />
 
 What happens next? This data(from the table)  will be saved in a SQLite DataBase called "Info" and Django will see that and show all of this data in Django's Admin Dashboard, HERE: http://127.0.0.1:8000/admin. <br />
 Login: admin , Password: 1234.
