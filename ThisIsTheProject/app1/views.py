@@ -3,9 +3,9 @@ from django.shortcuts import render
 from .functions import do_something
 
 def home(response):
-    return render(response, 'app1/base.html')
+    return render(response, 'app1/home.html')
 
 def index(response):
     do_something()
-    return render(response, 'app1/home.html')
+    return render(response, 'http://127.0.0.1:8000/admin/')
 # Create your views here.

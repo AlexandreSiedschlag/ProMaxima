@@ -1,8 +1,11 @@
 from bs4 import BeautifulSoup
 import requests
+from sqlalchemy import exists
 from .models import WebSiteInfo
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+import subprocess
+import os
 
 
 
@@ -56,25 +59,62 @@ def do_something(): #Compilado
     list2 = formatList(list1)
     print(f'Lista Normal: {list1} \n')
     print(f'Lista Formatada: {list2}')
-    print('\n SUMMONNING DEMONS AND ANGELS...PLEASE WAIT...\n')
+    print('\n SUMMONNING DEMONS AND ANGELS...PLEASE WAIT...\n')            
     for item in list2:
         print(f'item: {item} \n')
+        print(f'item[0][0]: {item[0][0]}')
+        print(f'item[0]: {item[0]}')
+        list3 =[0,0,0,0,0,0,0]
+        for i in range(0,7):
+            try:
+                print(f'i: {i}')
+                list3[i] = item[i][0]
+            except :
+                list3[i] = [0]
+            except erro2:
+                list3[i] = 0
+            if i == 0:
+                Atualizado = list3[i]
+            elif i == 1:
+                IP = list3[i]
+            elif i == 2:
+                Porto = list3[i]
+            elif i == 3:
+                Pais = list3[i]
+            elif i == 4:
+                Velocidade = list3[i]
+            elif i == 5:
+                Conectados = list3[i]
+            elif i == 6:
+                Protocolo = list3[i]
+            elif i == 7:
+                Anonimato = list3[i]
+            else:
+                raise Exception('Erro in fixing site data')
+        # print(f'item: {item} \n')
         #Should Return this['42', 'min'], ['88.198.50.103'], [], ['Alemanha'], ['10.06', 'sec'], ['2d', '9h'], ['HTTPS'], ['Elite']
-        Atualizado = item[0][0]
-        IP = item[1][0]
-        Porto = 0   
-        Pais = item[3][0]
-        Velocidade = item[4][0]
-        Conectados = item[5][0]
-        Protocolo = item[6][0]
-        Anonimato = item[7][0]
+
         ins = WebSiteInfo(Atualizado=Atualizado,
                    IP=IP, Porto=Porto, Pais=Pais, Velocidade=Velocidade,
                    Conectados=Conectados, Protocolo=Protocolo, Anonimato=Anonimato)
-        ins.save()
-        print(f'\nAtualizado: {Atualizado} | IP: {IP} | Porto: {Porto} | Pais: {Pais} | Velocidade: {Velocidade} | Conectados: {Conectados} | Protocolo: {Protocolo} | Anonimato: {Anonimato}\n')
+        try:
+            ins.save()
+        except:
+            makemig()
+        # print(f'\nAtualizado: {Atualizado} | IP: {IP} | Porto: {Porto} | Pais: {Pais} | Velocidade: {Velocidade} | Conectados: {Conectados} | Protocolo: {Protocolo} | Anonimato: {Anonimato}\n')
         # x = input()
-        
+
+def makemig():
+    os.system("python manage.py makemigrations")
+    os.system("python manage.py migrate")
+    # os.system("python manage.py createsuperuser")
+    # os.system("admin")
+    # os.system("")
+    
+    
+    
+
+
 def formatList(YourList):
     formatedList = [YourList[x:x+8] for x in range(0, len(YourList),8)]
     return formatedList
