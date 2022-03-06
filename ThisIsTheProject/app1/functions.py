@@ -53,6 +53,7 @@ def getStructure(): #Get Main site structure
         # list1.pop(25)
     return list1
 
+
 def do_something(): #Compilado
     list1 = getStructure()
     list2 = formatList(list1)
@@ -63,28 +64,28 @@ def do_something(): #Compilado
         # print(f'\nitem: {item}')
         for i in range(0,8):
             if len(item[i])==2:
-                tempo = item[i][0] + ' ' + item[i][1]
+                var1 = item[i][0] + ' ' + item[i][1]
             elif len(item[i])==1:
-                tempo = item[i][0]
+                var1 = item[i][0]
             else:
-                tempo = 0
-            # print(f'tempo: {tempo}')
+                var1 = ''
+            # print(f'var1: {var1}')
             if i == 0:
-                Atualizado = tempo
+                Atualizado = var1
             elif i == 1:
-                IP = tempo
+                IP = var1
             elif i == 2:
-                Porto = tempo
+                Porto = var1
             elif i == 3:
-                Pais = tempo
+                Pais = var1
             elif i == 4:
-                Velocidade = tempo
+                Velocidade = var1
             elif i == 5:
-                Conectados = tempo
+                Conectados = var1
             elif i == 6:
-                Protocolo = tempo
+                Protocolo = var1
             elif i == 7:
-                Anonimato = tempo
+                Anonimato = var1
         # print(f'item: {item} \n')
         #Should Return something like this['42', 'min'], ['88.198.50.103'], [], ['Alemanha'], ['10.06', 'sec'], ['2d', '9h'], ['HTTPS'], ['Elite']
 
