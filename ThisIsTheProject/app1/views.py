@@ -7,5 +7,5 @@ def home(response):
 
 def index(response):
     do_something()
-    return render(response, 'http://127.0.0.1:8000/admin/')
+    return render(response, 'app1/home.html')
 # Create your views here.

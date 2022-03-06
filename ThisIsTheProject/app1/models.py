@@ -1,11 +1,11 @@
 from django.db import models
 
 class WebSiteInfo(models.Model):
-    Atualizado = models.IntegerField()
-    IP = models.GenericIPAddressField(max_length=100)
-    Porto = models.IntegerField(blank=True, null=True)
+    Atualizado = models.CharField(max_length=100)
+    IP = models.CharField(max_length=100)
+    Porto = models.CharField(max_length=100, blank=True, null=True)
     Pais = models.CharField(max_length=100)
-    Velocidade = models.FloatField(max_length=100)
+    Velocidade = models.CharField(max_length=100)
     Conectados = models.CharField(max_length=100)
     Protocolo = models.CharField(max_length=100)
     Anonimato = models.CharField(max_length=100)
