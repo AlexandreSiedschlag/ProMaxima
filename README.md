@@ -68,6 +68,6 @@ Docker or Docker-Compose if well documented. :x:<br />
 Web Deploy for public acess.:x:<br />
 
 ## Aditional Info
-Note that, some information from the main table of https://pt.proxyservers.pro/ is JavaScript feeded.
+Note that, some information(like the Port column) from the main table of https://pt.proxyservers.pro/ is JavaScript feeded.
 BeautifulSoup cant handle this kind of information feed.
 To solve this problem would be necessary run a JavaScript program to collect that data.
