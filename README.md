@@ -35,7 +35,7 @@ Webdriver-manager 3.5 (2)<br />
 
 
 1 = Selenium was required for this project, because, when you load the page with beautifulsoup, some data is still not completly loaded, so, i made selenium render BeautifulSoup just after the data is completly loaded.<br />
-2 = Instead of downlaoding manually a ChromeDriver, i used this library to do the same job for me and be able to do the job for all Chrome versions.
+2 = Instead of downlaoding manually a ChromeDriver, i used this library to do the same job for all Chrome versions.
 
 
 ## How to use(step-by-step) :arrow_forward:
