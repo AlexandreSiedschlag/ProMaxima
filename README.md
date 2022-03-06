@@ -43,12 +43,13 @@ Clone this repo in your machine.<br />
 Open it.<br />
 Cd into the project directory, "ThisIsTheProject", or until you find a folder with the file "manage.py" in the same folder. <br />
 Run this code, "python manage.py runserver" in CLI, this code SHOULD start a good and stabilized running application. <br />
-Run application in local host. Open your Chrome and type http://127.0.0.1:8000/<br />
-Click the button, it will do the magic of web scrapping, scrapping the data from the table.<br />
-What happens next? This data(from the table)  will be saved in a SQLite DataBase and Django will see that and make another magic, showing all of this data in Django's Admin Dashboard, HERE: http://127.0.0.1:8000/admin. <br />
-Login: admin , Password: 1234
+Open your Chrome and type http://127.0.0.1:8000/ , or just ctrl+click the link in your CLI.<br />
+Click the button on the web page, it will do the magic of web scrapping, get the data from the table.<br /><br />
+
+What happens next? This data(from the table)  will be saved in a SQLite DataBase called "Info" and Django will see that and show all of this data in Django's Admin Dashboard, HERE: http://127.0.0.1:8000/admin. <br />
+Login: admin , Password: 1234.
 From Django Admin Dashboard you can create/edit/delete any data you want.<br />
-And thats complete the project, lest check the acomplished its below.<br />
+And that completes the project, let's check the acomplished its below.<br />
 
 ## Requirements acomplished :brain:
 Django aplication. (:heavy_check_mark: done) <br /> 
@@ -70,4 +71,5 @@ Web Deploy for public acess.:x:<br />
 ## Aditional Info
 Note that, some information(like the Port column) from the main table of https://pt.proxyservers.pro/ is JavaScript feeded.
 BeautifulSoup cant handle this kind of information feed.
-To solve this problem would be necessary run a JavaScript program to collect that data.
+To solve this problem would be necessary run a JavaScript program to collect that data. But by now lets leave it like this.
+In resume, if the information of the html is loaded without JavaScript, BeautifulSoup can collect it normally.
