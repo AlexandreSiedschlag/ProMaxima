@@ -1,11 +1,24 @@
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
-from .functions import do_something
+from .functions import do_something, getNumberPages
+from .forms import WebSiteInfoForm
+from .models import *
 
 def home(response):
-    return render(response, 'app1/home.html')
+    info = WebSiteInfo.objects.all()
+    totalRegisters = info.count()
+    totalPages = getNumberPages()
+    context = {'info': info, 'totalRegisters':totalRegisters, 'totalPages':totalPages}
+    return render(response, 'app1/home.html', context)
 
-def index(response):
+def scrap(response):
     do_something()
-    return HttpResponse(response, 'http://127.0.0.1:8000/')
+    return render(response, 'app/home.html')
+
+def create(response):
+    table = WebSiteInfo.objects.all()
+    return redirect(response, 'app1/home.html' , table)
+
+def edit(response):
+    return render(response, 'app1/data.html')
 # Create your views here.

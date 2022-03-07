@@ -1,0 +1,30 @@
+<div class="card card-body">
+    <table>
+        <a class="btn btn-primary btn-sm btn-block" href="">Create Data</a>
+        <tr>
+            <th>Atualizado</th>
+            <th>IP</th>
+            <th>Porto</th>
+            <th>Pais</th>
+            <th>Velocidade</th>
+            <th>Conectados</th>
+            <th>Protocolo</th>
+            <th>Anonimato</th>
+            <th>Actions</th>
+        </tr>
+        {% for item in info%}
+            <tr>
+                <td>{{item.Atualizado}}</td>
+                <td>{{item.IP}}</td>
+                <td>{{item.Porto}}</td>
+                <td>{{item.Pais}}</td>
+                <td>{{item.Velocidade}}</td>
+                <td>{{item.Conectados}}</td>
+                <td>{{item.Protocolo}}</td>
+                <td>{{item.Anonimato}}</td>
+                <td><a href="">Update</a></td>
+                <td><a href="">Delete</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
