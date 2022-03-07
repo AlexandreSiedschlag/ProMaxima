@@ -42,7 +42,7 @@ Webdriver-manager 3.5 (2)<br />
 1- Clone this repo in your machine.<br />
 2- Open it.<br />
 3- Cd into the project directory, "ThisIsTheProject", or until you find a folder with the file "manage.py" in the same folder. <br />
-4- Run this code, "python manage.py runserver" in CLI, this code SHOULD start a good and stabilized running application. <br />
+4- Run this code, "python manage.py runserver" in CLI, this code will start a the application. <br />
 5- Open your Chrome and type http://127.0.0.1:8000/ , or just ctrl+click the link in your CLI.<br />
 6- Click the button on the web page, it will do the magic of web scrapping, get the data from the table.<br /><br />
 
