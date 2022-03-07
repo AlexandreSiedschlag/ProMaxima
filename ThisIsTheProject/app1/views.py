@@ -15,7 +15,8 @@ def home(request):
 
 def scrap(request):
     do_something()
-    return redirect(request, 'app/home.html')
+    # return render(request, 'app1/home.html')
+    return redirect('/')
 
 def createOrder(request):
     form = WebSiteInfoForm()
@@ -42,6 +43,9 @@ def updateOrder(request, pk):
 
 def deleteOrder(request, pk):
     table = WebSiteInfo.objects.get(id=pk)
+    if request.method == 'POST':
+        table.delete()
+        return redirect('/')
     context = {'item':table}
     return render(request, 'app1/delete.html', context)
 

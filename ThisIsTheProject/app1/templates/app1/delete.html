@@ -2,7 +2,8 @@
 {% block content %}
 
     <h1>Are you sure you want to delete "{{item}}"?</h1>
-    <form method="POST">
+    <form action="{% url 'deleteOrder' item.id %}" method="POST">
+        {% csrf_token %}
         <a href="{% url 'home' %}">Cancel</a>
         <input type="submit" name="Confirm">
     </form>
