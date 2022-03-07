@@ -1,6 +1,8 @@
+{% block content %}
 <div class="card card-body">
     <table>
-        <a class="btn btn-primary btn-sm btn-block" href="">Create Data</a>
+        <a href="{% url 'scrap'%}" class="rainbow-button" alt="Button">Scrap New Data</a>
+        <a class="btn btn-primary btn-sm btn-block" href="{% url 'createOrder'%}">Create Data</a>
         <tr>
             <th>Atualizado</th>
             <th>IP</th>
@@ -22,9 +24,10 @@
                 <td>{{item.Conectados}}</td>
                 <td>{{item.Protocolo}}</td>
                 <td>{{item.Anonimato}}</td>
-                <td><a href="">Update</a></td>
-                <td><a href="">Delete</a></td>
+                <td><a class="btn btn-sm btn-info" href="{% url 'updateOrder' item.id %}">Update</a></td>
+                <td><a class="btn btn-sm btn-danger" href="{% url 'deleteOrder' item.id %}">Delete</a></td>
             </tr>
         {% endfor %}
     </table>
 </div>
+{% endblock %}

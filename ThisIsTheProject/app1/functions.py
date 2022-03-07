@@ -3,9 +3,6 @@ import requests
 from .models import WebSiteInfo
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-import subprocess
-import os
-from django.contrib.auth import get_user_model
 
 
 def getNumberPages(): #Get Number of pages
@@ -53,6 +50,10 @@ def getStructure(): #Get Main site structure
         # list1.pop(25)
     return list1
 
+def formatList(YourList):
+    formatedList = [YourList[x:x+8] for x in range(0, len(YourList),8)]
+    return formatedList
+
 
 def do_something(): #Compilado
     list1 = getStructure()
@@ -95,88 +96,3 @@ def do_something(): #Compilado
         print(f'\nAtualizado: {Atualizado} | IP: {IP} | Porto: {Porto} | Pais: {Pais} | Velocidade: {Velocidade} | Conectados: {Conectados} | Protocolo: {Protocolo} | Anonimato: {Anonimato}\n')
         # x = input()
         ins.save()
-    
-    
-    
-
-
-def formatList(YourList):
-    formatedList = [YourList[x:x+8] for x in range(0, len(YourList),8)]
-    return formatedList
-
-
-
-
-
-
-
-
-'''
-
-def getAtualizado(): #Get Valores
-    list1 = getStructure()
-    if len(list1[0])>0:
-        Atualizado = list1[0][0]
-    else: 
-        return None
-    return Atualizado
-
-def getIP():#Get Valores
-    list1 = getStructure()
-    if len(list1[1])>0:
-        Porto = list1[1][0]
-    else:
-        return None
-    return Porto
-
-def getPorto():#Get Valores
-    list1 = getStructure()
-    if len(list1[2])>0:
-        Porto = list1[2][0]
-    else:
-        return None
-    return Porto
-
-def getPais():#Get Valores
-    list1 = getStructure()
-    Pais = ''
-    if len(list1[3])>0:
-        for item in list1[3]:
-            Pais = str(Pais) + ' ' + str(item)
-    else:
-        Pais = list1[3][0]
-    return Pais
-
-def getVelocidade():#Get Valores
-    list1 = getStructure()
-    if len(list1[4])>0:
-        Porto = list1[4][0]
-    else:
-        return None
-    return Porto
-
-def getConectados():#Get Valores
-    list1 = getStructure()
-    if len(list1[5])>0:
-        Porto = list1[5][0]
-    else:
-        return None
-    return Porto
-
-def getProtocolo():#Get Valores
-    list1 = getStructure()
-    if len(list1[6])>0:
-        Porto = list1[6][0]
-    else:
-        return None
-    return Porto
-
-def getAnonimato():#Get Valores
-    list1 = getStructure()
-    if len(list1[7])>0:
-        Porto = list1[7][0]
-    else:
-        return None
-    return Porto
-
-'''
