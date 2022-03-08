@@ -77,3 +77,6 @@ Note that, some information(like the Port column) from the main table of https:/
 BeautifulSoup cant handle this kind of information feed.
 To solve this problem would be necessary run a JavaScript program to collect that data. But by now lets leave it like this.
 In resume, if the information of the html is loaded without JavaScript, BeautifulSoup can collect it normally.
+
+# Issues
+CSS not working properly, i made the link from settings, django, html and css. But for some reason when i make some changes, its not updating properly.
