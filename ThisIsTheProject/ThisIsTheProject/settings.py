@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-x&u=%1as%1no7m-n9e0)l2y&kn+q+^-=y7tn7muaz8!-=ih_vy'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['app1.promaximaappheroku.com', 'localhost', '127.0.0.1']
 
