@@ -49,7 +49,7 @@ Webdriver-manager 3.5 (2)<br />
 6- Click the button on the web page, it will do the magic of web scrapping, get the data from the table.<br /><br />
 
 What happens next? This data(from the table)  will be saved in a SQLite DataBase called "Info" and Django will see that and show all of this data in Django's Admin Dashboard, HERE: http://127.0.0.1:8000/admin. <br />
-Login: admin , Password: 1234.
+```Login: admin , Password: 1234.```<br/>
 From Django Admin Dashboard or the Main Page, you can create/edit/delete any data you want.<br />
 And that completes the project, let's check the acomplished its below.<br />
 
@@ -70,7 +70,7 @@ Simple code(Readable). (:heavy_check_mark: done)<br />
 Docker or Docker-Compose if well documented. :x:<br />
 Web Deploy for public acess.(1):x:<br />
 
-1- Tryied to deploy, but for somereason i keep getting Error 500 from the page.
+1- Tryied to deploy, but for some reason i keep getting Error 500 from the deployed page.
 
 ## Aditional Info
 Note that, some information(like the Port column) from the main table of https://pt.proxyservers.pro/ is JavaScript feeded.
