@@ -1,7 +1,9 @@
 form {
-    display: inline;  
     color:white;  
     background-color: red;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
 }
 body{
     background-color: #ebeff5;
