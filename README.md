@@ -42,13 +42,15 @@ Webdriver-manager 3.5 (2)<br />
 1- Clone this repo in your machine.<br />
 2- Open it.<br />
 3- Cd into the project directory, "ThisIsTheProject", or until you find a folder with the file "manage.py" in the same folder. <br />
-4- Run this code, "python manage.py runserver" in CLI, this code will start a the application. <br />
+4- Run this code to start the application.<br />
+```python manage.py runserver```
+
 5- Open your Chrome and type http://127.0.0.1:8000/ , or just ctrl+click the link in your CLI.<br />
 6- Click the button on the web page, it will do the magic of web scrapping, get the data from the table.<br /><br />
 
 What happens next? This data(from the table)  will be saved in a SQLite DataBase called "Info" and Django will see that and show all of this data in Django's Admin Dashboard, HERE: http://127.0.0.1:8000/admin. <br />
 Login: admin , Password: 1234.
-From Django Admin Dashboard you can create/edit/delete any data you want.<br />
+From Django Admin Dashboard or the Main Page, you can create/edit/delete any data you want.<br />
 And that completes the project, let's check the acomplished its below.<br />
 
 ## Requirements acomplished :brain:
@@ -66,7 +68,9 @@ Simple code(Readable). (:heavy_check_mark: done)<br />
 
 ## Extra :rocket:
 Docker or Docker-Compose if well documented. :x:<br />
-Web Deploy for public acess.:x:<br />
+Web Deploy for public acess.(1):x:<br />
+
+1- Tryied to deploy, but for somereason i keep getting Error 500 from the page.
 
 ## Aditional Info
 Note that, some information(like the Port column) from the main table of https://pt.proxyservers.pro/ is JavaScript feeded.
