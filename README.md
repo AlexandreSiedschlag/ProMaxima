@@ -70,7 +70,7 @@ Simple code(Readable). (:heavy_check_mark: done)<br />
 Docker or Docker-Compose if well documented. :x:<br />
 Web Deploy for public acess.(1):x:<br />
 
-1- Tryied to deploy, but for some reason i keep getting Error 500 from the deployed page.
+1- Changed the Debug mode to False, made the build to Heroku, tryied to deploy, but for some reason i keep getting Error 500 from the deployed page.
 
 ## Aditional Info
 Note that, some information(like the Port column) from the main table of https://pt.proxyservers.pro/ is JavaScript feeded.
