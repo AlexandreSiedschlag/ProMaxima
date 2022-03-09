@@ -24,7 +24,6 @@ def getNumberPages(): #Get Number of pages
     print(f'       {NumberPages} Pages Found.')
     return NumberPages
 
-
 def getStructure(): #Get Main site structure
     pages = getNumberPages()
     print('\n MAKING BLACK MAGIC...PLEASE WAIT...\n')
@@ -53,7 +52,6 @@ def getStructure(): #Get Main site structure
 def formatList(YourList):
     formatedList = [YourList[x:x+8] for x in range(0, len(YourList),8)]
     return formatedList
-
 
 def do_something(): #Compilado
     list1 = getStructure()

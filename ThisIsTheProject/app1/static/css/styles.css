@@ -1,7 +1,7 @@
 form {
     color:white;  
-    background-color: red;
-    display: inline-block;
+    background-color: gray;
+    display: list-item;
     align-items: center;
     text-align: center;
 }
