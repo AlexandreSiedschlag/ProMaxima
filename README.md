@@ -79,4 +79,6 @@ To solve this problem would be necessary run a JavaScript program to collect tha
 In resume, if the information of the html is loaded without JavaScript, BeautifulSoup can collect it normally.
 
 # Issues
-CSS not working properly, i made the link from settings, django, html and css. But for some reason when i make some changes, its not updating properly.
+CSS not working properly, i made the link from settings, django, html and css. But for some reason when i make some changes, its not updating properly. (1)
+
+1- After sometime i found out that my browser's cache was full, so i did Ctrl+F5 to hard refresh and solved the problem. Now Css is properly working
