@@ -1,11 +1,27 @@
 form {
-    color:white;  
+    width: 100%;
+    padding: 8px 73vh;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+nav{
+    position: relative;
+}
+.nav-link{
+    background-color: rgba(12,13,13, 3);
+    color: white;
+}
+.nav-link:hover{
     background-color: gray;
-    display: list-item;
-    align-items: center;
-    text-align: center;
+    color: black;
+    pointer-events:auto;
 }
 body{
-    background-color: #ebeff5;
+    background-color: lightgray;
 }
-
+.card-body{
+    background-color: lightgray;
+}

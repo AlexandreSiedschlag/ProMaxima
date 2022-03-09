@@ -17,11 +17,10 @@ def getNumberPages(): #Get Number of pages
         rows = object1.find_all('a')
         for row in rows:
             list1.append(row.text.split())
-            
             for number in list1:
                 NumberPages = number
     NumberPages = int(NumberPages[0])
-    print(f'       {NumberPages} Pages Found.')
+    print(f'  {NumberPages} Pages Found.')
     return NumberPages
 
 def getStructure(): #Get Main site structure
@@ -56,8 +55,8 @@ def formatList(YourList):
 def do_something(): #Compilado
     list1 = getStructure()
     list2 = formatList(list1)
-    print(f'Lista Normal: {list1} \n')
-    print(f'Lista Formatada: {list2}')
+    # print(f'Lista Normal: {list1} \n')
+    # print(f'Lista Formatada: {list2}')
     print('\n SUMMONNING DEMONS AND ANGELS...PLEASE WAIT...\n')            
     for item in list2:
         # print(f'\nitem: {item}')
@@ -91,6 +90,6 @@ def do_something(): #Compilado
         ins = WebSiteInfo(Atualizado=Atualizado,
                    IP=IP, Porto=Porto, Pais=Pais, Velocidade=Velocidade,
                    Conectados=Conectados, Protocolo=Protocolo, Anonimato=Anonimato)
-        print(f'\nAtualizado: {Atualizado} | IP: {IP} | Porto: {Porto} | Pais: {Pais} | Velocidade: {Velocidade} | Conectados: {Conectados} | Protocolo: {Protocolo} | Anonimato: {Anonimato}\n')
+        # print(f'\nAtualizado: {Atualizado} | IP: {IP} | Porto: {Porto} | Pais: {Pais} | Velocidade: {Velocidade} | Conectados: {Conectados} | Protocolo: {Protocolo} | Anonimato: {Anonimato}\n')
         # x = input()
         ins.save()

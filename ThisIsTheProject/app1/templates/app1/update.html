@@ -2,9 +2,11 @@
 
 {% block content %}
     <form action='' method="POST">
-        {% csrf_token %}
-        {{form}}
-        <br>
-        <input type="submit" name ='Submit'>
+        <div class="form-group">
+            {% csrf_token %}
+            {{form}}
+            <br>
+            <input type="submit" name ='Submit'>
+        </div>
     </form>
 {% endblock %}
