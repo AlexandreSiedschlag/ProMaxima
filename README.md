@@ -82,3 +82,5 @@ In resume, if the information of the html is loaded without JavaScript, Beautifu
 CSS not working properly, i made the link from settings, django, html and css. But for some reason when i make some changes, its not updating properly. (1)
 
 1- After sometime i found out that my browser's cache was full, so i did Ctrl+F5 to hard refresh and solved the problem. Now Css is working properly
+
+Check my LinkedIn: https://www.linkedin.com/in/alexandre-siedschlag-19309b215/
